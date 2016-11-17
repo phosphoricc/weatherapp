@@ -1,0 +1,9 @@
+<h1>{{city}}</h1>
+<a href="#/" class="btn btn-info">Back to Search</a>
+<div ng-repeat="w in weatherResult.list">
+  <div class="row">
+    <div class="col-md-12">
+      <weather-report weather-day="w" convert-to-standard="convertToCelsius (daytimeTemp)" convert-to-date="convertToDate(dt)"></weather-report>
+     </div>
+  </div>
+</div>
